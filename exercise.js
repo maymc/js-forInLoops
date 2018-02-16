@@ -36,7 +36,14 @@ var donutBox = {
 	taste: "fabulous"
 };
 
+function keysDonutBox(obj){
+	for(var prop in obj){
+		console.log(prop);
+	}
+	return obj;
+}
 
+keysDonutBox(donutBox);
 
 /*2.  Create a function that will take in an object and loop through the properties of that object.
 Console.log the values of the object. Use the donutBox object from the previous exercise above*/
