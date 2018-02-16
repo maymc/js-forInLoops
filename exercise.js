@@ -116,4 +116,16 @@ console.log("numProp: ", countProp(donutBox));
 /*@param {Object}
 @return {Object}*/
 
+function checkProp(obj){
 
+	for(var prop in obj){
+		if(obj.hasOwnProperty("occupation"))
+			return "Legend object has a property of occupation";
+		else
+			return "Legend object has no occupation";
+	}
+
+	return obj;
+}
+
+console.log(checkProp(donutBox));
