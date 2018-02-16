@@ -66,7 +66,12 @@ valuesDonutBox(donutBox);
 /*@param {Object}
 @return {Object}*/
 
+function removeTaste(obj){
+	delete obj.taste;
+	return obj;
+}
 
+console.log(removeTaste(donutBox));
 
 /*4. Create a function that will take in an object and will return all the values of the object in an array.*/
 
