@@ -51,7 +51,15 @@ Console.log the values of the object. Use the donutBox object from the previous 
 /*@param {Object}
 @return {Object}*/
 
+function valuesDonutBox(obj){
 
+	for(var prop in obj){
+		console.log(obj[prop]);
+	}
+	return obj;
+}
+
+valuesDonutBox(donutBox);
 
 /*3. Create a function that will take in an object and will delete the taste property from the donutBox object above.*/
 
