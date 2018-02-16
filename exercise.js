@@ -78,7 +78,16 @@ console.log(removeTaste(donutBox));
 /*@param {Object}
 @return {Array}*/
 
+function valuesInArray(obj){
+	var valueArray = [];
+	for(var prop in obj){
+		valueArray.push(obj[prop]);
+	}
+	
+	return valueArray;
+}
 
+console.log(valuesInArray(donutBox));
 
 /*5. Create a function that will take in an object and will return the number of properties (key -value pairs) in the object. Use the legend object above.
 
